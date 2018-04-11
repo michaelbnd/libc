@@ -5,14 +5,15 @@
 ** Compute x raised to the power y
 */
 
-#include "conversion.h"
+#include "math.h"
 
-double ez_pow(double x, double y)
+double ez_pow(double x, int y)
 {
-	if (y < 0)
+	if (y == INT_MIN)
 		return 0;
+	if (y < 0)
+		return (1 / ez_pow(x, -y));
 	if (y == 0)
 		return (1);
-	else
-		return (x * ez_pow(x, y - 1));
+	return (x * ez_pow(x, y - 1));
 }

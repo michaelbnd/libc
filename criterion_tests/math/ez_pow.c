@@ -8,35 +8,24 @@
 #include "criterion/criterion.h"
 #include "conversion.h"
 
-
-Test(ez_pow, neg)
-{
-	cr_expect(ez_pow(13, -10) == 0, "");
-}
-
 Test(ez_pow, zero)
 {
-	cr_expect(ez_pow(0, 0) == 1, "");
+	cr_expect_eq(ez_pow(0, 0), 1);
 }
 
 Test(ez_pow, zero1)
 {
-	cr_expect(ez_pow(100, 0) == 1, "");
+	cr_expect_eq(ez_pow(100, 0), 1);
 }
 
 Test(ez_pow, basic)
 {
-	cr_expect(ez_pow(300, 2) == 90000, "");
-}
-
-Test(ez_pow, neg1)
-{
-	cr_expect(ez_pow(-40, 3) == -64000, "");
+	cr_expect_eq(ez_pow(300, 2), 90000);
 }
 
 Test(ez_pow, big)
 {
-	cr_expect(ez_pow(2, 30) == 1073741824, "");
+	cr_expect_eq(ez_pow(2, 30), 1073741824);
 }
 
 Test(ez_pow, floating)
@@ -47,4 +36,24 @@ Test(ez_pow, floating)
 Test(ez_pow, floating1)
 {
 	cr_expect_float_eq(ez_pow(2.5, 5), 97.65625, 0.00000001);
+}
+
+Test(ez_pow, min)
+{
+	cr_expect_eq(ez_pow(2.5, -2147483648), 0);
+}
+
+Test(ez_pow, neg_x)
+{
+	cr_expect_eq(ez_pow(-40, 3), -64000);
+}
+
+Test(ez_pow, neg_y)
+{
+	cr_expect_float_eq(ez_pow(2, -1), 0.5, 0.000000001);
+}
+
+Test(ez_pow, neg_y1)
+{
+	cr_expect_float_eq(ez_pow(10, -4), 0.0001, 0.000000001);
 }

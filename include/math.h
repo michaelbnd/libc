@@ -6,5 +6,6 @@
 */
 
 #include <stddef.h>
+#include <limits.h>
 
-double ez_pow(double x, double y);
+double ez_pow(double x, int y);
