@@ -1,0 +1,9 @@
+
+header_criterion
+header
+*.swp
+*.o
+criterion_tests/criterion_tests
+.DS_Store
+*.gcno
+*.gcda
