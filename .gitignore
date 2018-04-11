@@ -7,3 +7,5 @@ criterion_tests/criterion_tests
 .DS_Store
 *.gcno
 *.gcda
+criterion_tests/out/*
+criterion_tests/coverage.info
