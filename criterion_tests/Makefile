@@ -47,4 +47,4 @@ coverage:	$(NAME)
 	genhtml coverage.info --output-directory out
 	open out/index.html
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re coverage
