@@ -9,3 +9,4 @@
 #include <limits.h>
 
 double ez_pow(double x, int y);
+double ez_sqrt(double x);
