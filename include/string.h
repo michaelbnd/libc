@@ -8,3 +8,4 @@
 #include <stddef.h>
 
 size_t ez_strlen(char const *);
+char *ez_strchr(const char *s, char c);
