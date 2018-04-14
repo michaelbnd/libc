@@ -5,7 +5,7 @@
 ** Compute x raised to the power y
 */
 
-#include "math.h"
+#include "ez_math.h"
 
 double ez_pow(double x, int y)
 {

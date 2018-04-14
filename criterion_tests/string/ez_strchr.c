@@ -5,8 +5,8 @@
 ** Unit tests for ez_strchr()
 */
 
-#include "criterion/criterion.h"
-#include "../include/string.h"
+#include <criterion/criterion.h>
+#include "ez_string.h"
 
 Test(ez_strchrtr, empty)
 {

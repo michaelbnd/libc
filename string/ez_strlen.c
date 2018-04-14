@@ -5,7 +5,7 @@
 ** Returns the number of character found in the string passed as parameter.
 */
 
-#include "string.h"
+#include "ez_string.h"
 
 size_t ez_strlen(char const *str)
 {

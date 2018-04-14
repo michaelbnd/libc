@@ -5,8 +5,8 @@
 ** Unit tests for ez_pow()
 */
 
-#include "criterion/criterion.h"
-#include "conversion.h"
+#include <criterion/criterion.h>
+#include "ez_conversion.h"
 
 Test(ez_pow, zero)
 {

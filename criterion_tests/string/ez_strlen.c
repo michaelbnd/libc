@@ -5,8 +5,8 @@
 ** Unit tests for ez_strlen()
 */
 
-#include "criterion/criterion.h"
-#include "../include/string.h"
+#include <criterion/criterion.h>
+#include "ez_string.h"
 
 Test(ez_strlen, empty)
 {

@@ -9,3 +9,4 @@
 
 size_t ez_strlen(char const *);
 char *ez_strchr(const char *s, char c);
+char *ez_strcpy(char *dst, const char *src);

@@ -5,7 +5,7 @@
 ** Locates the first occurrence of c in the string pointed to by s
 */
 
-#include "string.h"
+#include "ez_string.h"
 
 char *ez_strchr(const char *s, char c)
 {
