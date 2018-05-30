@@ -6,7 +6,7 @@
 */
 
 #include <criterion/criterion.h>
-#include "ez_conversion.h"
+#include "ez_math.h"
 
 Test(ez_sqrt, zero)
 {
