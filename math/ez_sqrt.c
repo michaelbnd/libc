@@ -1,8 +1,8 @@
 /*
 ** LIBC PROJECT, 2018
-** ez_pow
+** ez_sqrt
 ** File description :
-** Compute x raised to the power y
+** Compute the square root of x
 */
 
 #include "ez_math.h"
